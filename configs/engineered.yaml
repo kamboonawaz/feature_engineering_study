@@ -1,0 +1,7 @@
+experiment_name: engineered
+random_state: 42
+model:
+  type: GradientBoostingRegressor
+  params:
+    random_state: 42
+feature_pipeline: engineered

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.env
+.venv
+
+# Data
+data/raw/*
+!data/raw/.gitkeep
+mlruns/
+
+# Models
+models/*.joblib
+
+# Reports artifacts
+reports/metrics.json
+reports/summary.txt
+reports/metrics_table.md
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
