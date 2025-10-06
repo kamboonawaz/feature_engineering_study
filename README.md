@@ -28,16 +28,9 @@ make baseline
 make engineered
 ```
 
-Compare & summarize:
-
-```
-make evaluate
-```
-
 Outputs:
 - Models: `models/{baseline,engineered}.joblib`
 - Metrics log: `reports/metrics.json`
-- Summary: `reports/summary.txt`
 
 ## Structure
 ```
@@ -45,10 +38,11 @@ src/
 	data_download.py
 	features.py
 	train.py
-	evaluate.py
 configs/
 	baseline.yaml
 	engineered.yaml
+notebooks/
+	feature_engineering_showcase.ipynb
 ```
 
 ## Next Ideas
@@ -66,9 +60,4 @@ python -m pip install -r requirements.txt
 python src/data_download.py
 python src/train.py --config configs/baseline.yaml
 python src/train.py --config configs/engineered.yaml
-python src/evaluate.py
-```
-Or simply:
-```
-python run_all.py
 ```
